@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bvjqt3vo7ky1x"]
+
+[ext_resource type="Texture2D" uid="uid://bh1kns02udlf7" path="res://Scenes/Props/Trees/Tree.kra" id="1_7xyhg"]
+[ext_resource type="Script" uid="uid://bjyw6s6xmhak6" path="res://Scenes/Props/Trees/Tree.gd" id="1_y6hk3"]
+[ext_resource type="Script" uid="uid://c0v7jo6hxyho7" path="res://Common/Hurtbox.gd" id="2_x0dji"]
+[ext_resource type="Script" uid="uid://cd8qvdueih80u" path="res://Common/HealthManager.gd" id="3_ayxwm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x0dji"]
+size = Vector2(352.23584, 885.6216)
+
+[node name="Tree" type="Node2D" unique_id=1419930540]
+script = ExtResource("1_y6hk3")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1060892676]
+position = Vector2(0, -1)
+scale = Vector2(0.099365234, 0.099365234)
+texture = ExtResource("1_7xyhg")
+offset = Vector2(17.611794, -686.8599)
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=1904137703 node_paths=PackedStringArray("health_manager")]
+position = Vector2(1.75, -69.25)
+scale = Vector2(0.099365234, 0.099365234)
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+script = ExtResource("2_x0dji")
+health_manager = NodePath("../HealthManager")
+metadata/_custom_type_script = "uid://c0v7jo6hxyho7"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=1094662597]
+position = Vector2(-25.15971, 281.7887)
+shape = SubResource("RectangleShape2D_x0dji")
+
+[node name="HealthManager" type="Node" parent="." unique_id=1497196477]
+script = ExtResource("3_ayxwm")
+metadata/_custom_type_script = "uid://cd8qvdueih80u"
+
+[connection signal="changed" from="HealthManager" to="." method="_on_health_manager_changed"]
+[connection signal="died" from="HealthManager" to="." method="_on_health_manager_died"]

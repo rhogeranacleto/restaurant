@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://djx1aue68dmgb"]
+
+[ext_resource type="Texture2D" uid="uid://bla8rj32yo0cj" path="res://Scenes/Weapons/Axe/Axe.kra" id="1_fjsbm"]
+[ext_resource type="Script" uid="uid://bv5w5qqcj1kqf" path="res://Common/Hitbox.gd" id="2_qaice"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qaice"]
+size = Vector2(20, 14)
+
+[node name="Axe" type="Node2D" unique_id=1974589341]
+
+[node name="Axe" type="Sprite2D" parent="." unique_id=1916672172]
+position = Vector2(5.000002, -9)
+scale = Vector2(0.018798852, 0.018798852)
+texture = ExtResource("1_fjsbm")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1867086528]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+script = ExtResource("2_qaice")
+damange_amount = 40.0
+metadata/_custom_type_script = "uid://bv5w5qqcj1kqf"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1584302378]
+position = Vector2(4, -20)
+shape = SubResource("RectangleShape2D_qaice")

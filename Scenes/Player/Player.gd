@@ -4,6 +4,12 @@ class_name Player
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
+@onready var axe: Node2D = $Axe
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("attack"):
+		attack()
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -24,3 +30,18 @@ func _physics_process(delta: float) -> void:
 		velocity.y = move_toward(velocity.y, 0, SPEED)
 
 	move_and_slide()
+
+var tweeing : Tween
+
+func attack() -> void:
+	if tweeing:
+		return
+	
+	tweeing = create_tween()
+	
+	tweeing.tween_property(axe, "rotation", deg_to_rad(140), 0.3)
+	tweeing.tween_property(axe, "rotation", deg_to_rad(0), 1)
+	await tweeing.finished
+	tweeing = null
+	
+	pass

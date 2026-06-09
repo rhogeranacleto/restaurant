@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://dmb0mwxdnilfk"]
 
 [ext_resource type="PackedScene" uid="uid://b1n2occ8bv3hv" path="res://Scenes/Player/Player.tscn" id="1_aes60"]
-[ext_resource type="Texture2D" uid="uid://cq4q1qbq6aeba" path="res://Assets/textures.png" id="1_bot87"]
+[ext_resource type="Texture2D" uid="uid://dlsm7kleq7yqt" path="res://Assets/textures.kra" id="1_bot87"]
+[ext_resource type="PackedScene" uid="uid://bvjqt3vo7ky1x" path="res://Scenes/Props/Trees/Tree.tscn" id="3_trtgg"]
 
 [node name="TestLevel" type="Node2D" unique_id=1015776034]
 
@@ -11,3 +12,45 @@ texture = ExtResource("1_bot87")
 
 [node name="Player" parent="." unique_id=1750509619 instance=ExtResource("1_aes60")]
 position = Vector2(534, 167)
+
+[node name="Tree" parent="." unique_id=1419930540 instance=ExtResource("3_trtgg")]
+position = Vector2(805, 105)
+
+[node name="Tree2" parent="." unique_id=2103266641 instance=ExtResource("3_trtgg")]
+position = Vector2(134, 14)
+
+[node name="Tree3" parent="." unique_id=1181903917 instance=ExtResource("3_trtgg")]
+position = Vector2(301, 464)
+
+[node name="Tree4" parent="." unique_id=474515958 instance=ExtResource("3_trtgg")]
+position = Vector2(509, -269)
+
+[node name="Tree5" parent="." unique_id=985742866 instance=ExtResource("3_trtgg")]
+position = Vector2(1204, 498)
+
+[node name="Tree6" parent="." unique_id=2103708928 instance=ExtResource("3_trtgg")]
+position = Vector2(-232, 311)
+
+[node name="Tree7" parent="." unique_id=2123207512 instance=ExtResource("3_trtgg")]
+position = Vector2(-293, 117)
+
+[node name="Tree8" parent="." unique_id=428858552 instance=ExtResource("3_trtgg")]
+position = Vector2(689, 599)
+
+[node name="Tree9" parent="." unique_id=863522110 instance=ExtResource("3_trtgg")]
+position = Vector2(18, 508)
+
+[node name="Tree10" parent="." unique_id=891411051 instance=ExtResource("3_trtgg")]
+position = Vector2(185, 958)
+
+[node name="Tree11" parent="." unique_id=830447073 instance=ExtResource("3_trtgg")]
+position = Vector2(393, 225)
+
+[node name="Tree12" parent="." unique_id=728047947 instance=ExtResource("3_trtgg")]
+position = Vector2(1088, 992)
+
+[node name="Tree13" parent="." unique_id=1035167083 instance=ExtResource("3_trtgg")]
+position = Vector2(-348, 805)
+
+[node name="Tree14" parent="." unique_id=1514705983 instance=ExtResource("3_trtgg")]
+position = Vector2(-293, 117)
