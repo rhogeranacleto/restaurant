@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dmb0mwxdnilfk"]
+
+[ext_resource type="PackedScene" uid="uid://b1n2occ8bv3hv" path="res://Scenes/Player/Player.tscn" id="1_aes60"]
+[ext_resource type="Texture2D" uid="uid://cq4q1qbq6aeba" path="res://Assets/textures.png" id="1_bot87"]
+
+[node name="TestLevel" type="Node2D" unique_id=1015776034]
+
+[node name="Textures" type="Sprite2D" parent="." unique_id=909046109]
+position = Vector2(550, 176)
+texture = ExtResource("1_bot87")
+
+[node name="Player" parent="." unique_id=1750509619 instance=ExtResource("1_aes60")]
+position = Vector2(534, 167)

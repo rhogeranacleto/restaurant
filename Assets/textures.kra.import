@@ -1,0 +1,14 @@
+[remap]
+
+importer="kra.importer"
+type="ImageTexture"
+uid="uid://dlsm7kleq7yqt"
+path="res://.godot/imported/textures.kra-fb1f0bba60f16c1b15e692b9b744deaf.res"
+
+[deps]
+
+source_file="res://Assets/textures.kra"
+dest_files=["res://.godot/imported/textures.kra-fb1f0bba60f16c1b15e692b9b744deaf.res"]
+
+[params]
+
