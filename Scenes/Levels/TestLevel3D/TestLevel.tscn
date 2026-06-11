@@ -1,0 +1,471 @@
+[gd_scene format=3 uid="uid://m4u0enhgkuy3"]
+
+[ext_resource type="Texture2D" uid="uid://dlsm7kleq7yqt" path="res://Assets/textures.kra" id="1_wssub"]
+[ext_resource type="PackedScene" uid="uid://dx78kd2ddvfal" path="res://Scenes/Player/Player3D.tscn" id="2_jxbr0"]
+[ext_resource type="PackedScene" uid="uid://b2cok54cbuek2" path="res://Scenes/Props/Trees/Tree3D.tscn" id="3_akaeh"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_akaeh"]
+
+[node name="TestLevel" type="Node3D" unique_id=1211114861]
+
+[node name="Player3D" parent="." unique_id=1990824851 instance=ExtResource("2_jxbr0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7816582, 0)
+
+[node name="Tree3d" parent="." unique_id=1013676132 instance=ExtResource("3_akaeh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.25101, 0, 4.6376944)
+
+[node name="Tree3d2" parent="." unique_id=1683496732 instance=ExtResource("3_akaeh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9498153, 0, 5.957179)
+
+[node name="Tree3d3" parent="." unique_id=1566645659 instance=ExtResource("3_akaeh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.0656133, -0.7758379, -5.6534815)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=613764654]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.8559322)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1804430807]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D" unique_id=1884426731]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.47471237, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=2050850581]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5200543, 0, 2.8559322)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=27718011]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D2" unique_id=2027557951]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.8340893, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="." unique_id=1674128571]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5947776, 0, 2.8559322)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3" unique_id=951109443]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D3" unique_id=138609493]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="." unique_id=589525300]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5947776, 0, -2.9240055)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D4" unique_id=1784273494]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D4" unique_id=1949754762]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0.43913746)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D5" type="StaticBody3D" parent="." unique_id=734722975]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28851748, 0, -2.9240055)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D5" unique_id=1415902385]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D5" unique_id=199542848]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0.34536648)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="Sprite3D2" type="Sprite3D" parent="StaticBody3D5" unique_id=187334157]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 5.246788, 0, 0.34536648)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D6" type="StaticBody3D" parent="." unique_id=1772575973]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.278006, 0, 2.8559322)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D6" unique_id=72462587]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D6" unique_id=1520124127]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.47471237, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D7" type="StaticBody3D" parent="." unique_id=2139109189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.79806, 0, 2.8559322)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D7" unique_id=1449026533]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D7" unique_id=1287679570]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.8340893, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D8" type="StaticBody3D" parent="." unique_id=1848455560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.683228, 0, 2.8559322)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D8" unique_id=57765455]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D8" unique_id=764425028]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D9" type="StaticBody3D" parent="." unique_id=646891101]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.683228, 0, -2.9240055)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D9" unique_id=1176246909]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D9" unique_id=583773234]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0.43913746)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D10" type="StaticBody3D" parent="." unique_id=713251553]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.989489, 0, -2.9240055)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D10" unique_id=979399347]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D10" unique_id=1626582023]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0.34536648)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="Sprite3D2" type="Sprite3D" parent="StaticBody3D10" unique_id=1624457953]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 5.246788, 0, 0.34536648)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D11" type="StaticBody3D" parent="." unique_id=835517112]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65127754, 0, -6.8610144)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D11" unique_id=9826957]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D11" unique_id=382694830]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.47471237, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D12" type="StaticBody3D" parent="." unique_id=1202322998]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8687763, 0, -6.8610144)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D12" unique_id=1067973160]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D12" unique_id=220935649]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.8340893, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D13" type="StaticBody3D" parent="." unique_id=1929175570]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2460556, 0, -6.8610144)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D13" unique_id=1862064902]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D13" unique_id=596874170]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D14" type="StaticBody3D" parent="." unique_id=629213932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2460556, 0, -12.640952)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D14" unique_id=1089856350]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D14" unique_id=309392966]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0.43913746)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D15" type="StaticBody3D" parent="." unique_id=1336067617]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.93979454, 0, -12.640952)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D15" unique_id=1485586657]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D15" unique_id=647434016]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0.34536648)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="Sprite3D2" type="Sprite3D" parent="StaticBody3D15" unique_id=1984524922]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 5.246788, 0, 0.34536648)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D16" type="StaticBody3D" parent="." unique_id=737041152]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65127754, 0, 11.951001)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D16" unique_id=1129005337]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D16" unique_id=1958612381]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.47471237, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D17" type="StaticBody3D" parent="." unique_id=918933625]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8687763, 0, 11.951001)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D17" unique_id=840863451]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D17" unique_id=642250571]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.8340893, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D18" type="StaticBody3D" parent="." unique_id=644815576]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2460556, 0, 11.951001)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D18" unique_id=1029128228]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D18" unique_id=858857561]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D19" type="StaticBody3D" parent="." unique_id=2031814247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2460556, 0, 6.1710634)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D19" unique_id=997608623]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D19" unique_id=1459913009]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0.43913746)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D20" type="StaticBody3D" parent="." unique_id=364597543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.93979454, 0, 6.1710634)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D20" unique_id=1426619401]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D20" unique_id=645150161]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0.34536648)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="Sprite3D2" type="Sprite3D" parent="StaticBody3D20" unique_id=1974373018]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 5.246788, 0, 0.34536648)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D21" type="StaticBody3D" parent="." unique_id=916272381]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.959185, 0, 11.951001)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D21" unique_id=1292390347]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D21" unique_id=308031730]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.47471237, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D22" type="StaticBody3D" parent="." unique_id=727856272]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.439131, 0, 11.951001)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D22" unique_id=507211600]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D22" unique_id=116994743]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.8340893, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D23" type="StaticBody3D" parent="." unique_id=1815917821]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.553963, 0, 11.951001)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D23" unique_id=789454017]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D23" unique_id=955508994]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D24" type="StaticBody3D" parent="." unique_id=682198424]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.553963, 0, 6.1710634)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D24" unique_id=1793495263]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D24" unique_id=1145230208]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0.43913746)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D25" type="StaticBody3D" parent="." unique_id=1503850053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.247702, 0, 6.1710634)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D25" unique_id=166772123]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D25" unique_id=1924207815]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0.34536648)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="Sprite3D2" type="Sprite3D" parent="StaticBody3D25" unique_id=1064973390]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 5.246788, 0, 0.34536648)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D26" type="StaticBody3D" parent="." unique_id=523883306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.959185, 0, 3.2282887)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D26" unique_id=94772384]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D26" unique_id=911525254]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.47471237, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D27" type="StaticBody3D" parent="." unique_id=998792270]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.439131, 0, 3.2282887)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D27" unique_id=2051386463]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D27" unique_id=753551332]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.8340893, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D28" type="StaticBody3D" parent="." unique_id=404513426]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.553963, 0, 3.2282887)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D28" unique_id=1563878041]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D28" unique_id=46869871]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D29" type="StaticBody3D" parent="." unique_id=679587703]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.553963, 0, -2.551649)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D29" unique_id=1709091917]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D29" unique_id=1582273558]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0.43913746)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="StaticBody3D30" type="StaticBody3D" parent="." unique_id=1793260239]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.247702, 0, -2.551649)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D30" unique_id=567282799]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_akaeh")
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D30" unique_id=985072288]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, 0, 0.34536648)
+axis = 1
+texture = ExtResource("1_wssub")
+
+[node name="Sprite3D2" type="Sprite3D" parent="StaticBody3D30" unique_id=2016601859]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 5.246788, 0, 0.34536648)
+axis = 1
+texture = ExtResource("1_wssub")

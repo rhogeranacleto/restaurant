@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dx78kd2ddvfal"]
+
+[ext_resource type="Script" uid="uid://b2v4j8uaiwuqt" path="res://Scenes/Player/player_3d.gd" id="1_3h6q4"]
+[ext_resource type="Texture2D" uid="uid://whejtr6mn8sl" path="res://Scenes/Player/PlayerSprite.kra" id="1_n352q"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n352q"]
+size = Vector3(1.1640625, 3.7390137, 1)
+
+[node name="Player3D" type="CharacterBody3D" unique_id=1990824851]
+collision_mask = 2
+script = ExtResource("1_3h6q4")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=182558195]
+transform = Transform3D(0.205, 0, 0, 0, 0.205, 0, 0, 0, 0.205, 0, 2.3026376, 0)
+texture = ExtResource("1_n352q")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2043505111]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08203125, 1.8927002, 0)
+shape = SubResource("BoxShape3D_n352q")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2040146542]
+transform = Transform3D(1, 0, 0, 0, 0.8655276, 0.5008613, 0, -0.5008613, 0.8655276, 0, 9.333361, 13.078892)
+current = true
+fov = 36.2
+size = 7.639221
