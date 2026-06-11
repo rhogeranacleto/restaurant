@@ -1,0 +1,14 @@
+[remap]
+
+importer="kra.importer"
+type="ImageTexture"
+uid="uid://bh1kns02udlf7"
+path="res://.godot/imported/Tree.kra-d9607ff623d315fd1126a05514ed914f.res"
+
+[deps]
+
+source_file="res://Entities/Props/Trees/Tree.kra"
+dest_files=["res://.godot/imported/Tree.kra-d9607ff623d315fd1126a05514ed914f.res"]
+
+[params]
+

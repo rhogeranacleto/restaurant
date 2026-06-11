@@ -1,0 +1,14 @@
+[remap]
+
+importer="kra.importer"
+type="ImageTexture"
+uid="uid://whejtr6mn8sl"
+path="res://.godot/imported/PlayerSprite.kra-328aa4a284bd529a31d68708b8a2bed3.res"
+
+[deps]
+
+source_file="res://Entities/Player/PlayerSprite.kra"
+dest_files=["res://.godot/imported/PlayerSprite.kra-328aa4a284bd529a31d68708b8a2bed3.res"]
+
+[params]
+

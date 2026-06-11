@@ -4,6 +4,8 @@ class_name Player
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
+@export var inventory : Inventory
+
 @onready var axe: Node2D = $Axe
 
 func _input(event: InputEvent) -> void:
@@ -24,7 +26,10 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	if direction:
-		velocity = direction * SPEED
+		#velocity = direction * SPEED
+		velocity = velocity.slerp(direction * SPEED, delta * 10)
+		#velocity.x = move_toward(velocity.x, direction.x * SPEED, SPEED)
+		#velocity.y = move_toward(velocity.y, direction.y * SPEED, SPEED)
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.y = move_toward(velocity.y, 0, SPEED)

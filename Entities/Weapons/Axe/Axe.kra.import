@@ -1,0 +1,14 @@
+[remap]
+
+importer="kra.importer"
+type="ImageTexture"
+uid="uid://bla8rj32yo0cj"
+path="res://.godot/imported/Axe.kra-c6998032c5eb500bce6c034044bd6b6c.res"
+
+[deps]
+
+source_file="res://Entities/Weapons/Axe/Axe.kra"
+dest_files=["res://.godot/imported/Axe.kra-c6998032c5eb500bce6c034044bd6b6c.res"]
+
+[params]
+

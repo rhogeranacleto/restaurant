@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bvjqt3vo7ky1x"]
 
-[ext_resource type="Texture2D" uid="uid://bh1kns02udlf7" path="res://Scenes/Props/Trees/Tree.kra" id="1_7xyhg"]
-[ext_resource type="Script" uid="uid://bjyw6s6xmhak6" path="res://Scenes/Props/Trees/Tree.gd" id="1_y6hk3"]
-[ext_resource type="Script" uid="uid://c0v7jo6hxyho7" path="res://Common/Hurtbox.gd" id="2_x0dji"]
+[ext_resource type="Texture2D" uid="uid://bh1kns02udlf7" path="res://Entities/Props/Trees/Tree.kra" id="1_7xyhg"]
+[ext_resource type="Script" uid="uid://bjyw6s6xmhak6" path="res://Entities/Props/Trees/Tree.gd" id="1_y6hk3"]
+[ext_resource type="Script" uid="uid://c0v7jo6hxyho7" path="res://Common/Boxes/Hurtbox.gd" id="2_x0dji"]
 [ext_resource type="Script" uid="uid://cd8qvdueih80u" path="res://Common/HealthManager.gd" id="3_ayxwm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0dji"]

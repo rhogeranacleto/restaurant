@@ -1,0 +1,14 @@
+[remap]
+
+importer="kra.importer"
+type="ImageTexture"
+uid="uid://d2jc4h05lonxx"
+path="res://.godot/imported/Wood.kra-0ae730fbe10f19b19df0a8aab777e503.res"
+
+[deps]
+
+source_file="res://Entities/Items/Wood/Wood.kra"
+dest_files=["res://.godot/imported/Wood.kra-0ae730fbe10f19b19df0a8aab777e503.res"]
+
+[params]
+

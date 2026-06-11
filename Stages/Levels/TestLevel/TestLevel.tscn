@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://dmb0mwxdnilfk"]
 
-[ext_resource type="PackedScene" uid="uid://b1n2occ8bv3hv" path="res://Scenes/Player/Player.tscn" id="1_aes60"]
+[ext_resource type="PackedScene" uid="uid://b1n2occ8bv3hv" path="res://Entities/Player/Player.tscn" id="1_aes60"]
 [ext_resource type="Texture2D" uid="uid://dlsm7kleq7yqt" path="res://Assets/textures.kra" id="1_bot87"]
-[ext_resource type="PackedScene" uid="uid://bvjqt3vo7ky1x" path="res://Scenes/Props/Trees/Tree.tscn" id="3_trtgg"]
+[ext_resource type="PackedScene" uid="uid://bvjqt3vo7ky1x" path="res://Entities/Props/Trees/Tree.tscn" id="3_trtgg"]
 
 [node name="TestLevel" type="Node2D" unique_id=1015776034]
+y_sort_enabled = true
 
 [node name="Textures" type="Sprite2D" parent="." unique_id=909046109]
+z_index = -1
 position = Vector2(550, 176)
 texture = ExtResource("1_bot87")
 

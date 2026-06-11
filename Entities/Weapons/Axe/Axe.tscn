@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://djx1aue68dmgb"]
 
-[ext_resource type="Texture2D" uid="uid://bla8rj32yo0cj" path="res://Scenes/Weapons/Axe/Axe.kra" id="1_fjsbm"]
-[ext_resource type="Script" uid="uid://bv5w5qqcj1kqf" path="res://Common/Hitbox.gd" id="2_qaice"]
+[ext_resource type="Texture2D" uid="uid://bla8rj32yo0cj" path="res://Entities/Weapons/Axe/Axe.kra" id="1_fjsbm"]
+[ext_resource type="Script" uid="uid://bv5w5qqcj1kqf" path="res://Common/Boxes/Hitbox.gd" id="2_qaice"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qaice"]
 size = Vector2(20, 14)
