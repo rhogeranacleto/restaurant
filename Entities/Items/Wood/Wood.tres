@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://cuhpiea611g38"]
+
+[ext_resource type="Texture2D" uid="uid://d2jc4h05lonxx" path="res://Entities/Items/Wood/Wood.kra" id="1_bm0au"]
+[ext_resource type="Script" uid="uid://dr73up7rt0qmp" path="res://Common/Inventory/InventoryItem.gd" id="1_sl44s"]
+
+[resource]
+script = ExtResource("1_sl44s")
+name = "Wood"
+max_size = 50
+icon = ExtResource("1_bm0au")
+metadata/_custom_type_script = "uid://dr73up7rt0qmp"

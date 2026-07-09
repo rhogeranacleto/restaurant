@@ -7,17 +7,21 @@ const COLLECTABLE: PackedScene = preload("uid://bwb7y21srdq0m")
 
 func _on_health_manager_changed(health: float, max_health: float) -> void:
 	var tween = create_tween()
-	
+
 	tween.tween_property(sprite, "rotation_degrees", -15, 0.2)
 	tween.tween_property(sprite, "rotation_degrees", 15, 0.2)
 	tween.tween_property(sprite, "rotation_degrees", 0, 0.2)
 	tween.tween_property(sprite, "modulate", Color(1.0, 1.0, 1.0, health / max_health), 0.4)
 
+const WOOD = preload("uid://cuhpiea611g38")
+
 func _on_health_manager_died() -> void:
 	var wood : Node2D = COLLECTABLE.instantiate()
-	
+
 	wood.global_position = global_position
-	
+
+	wood.inventory_item = WOOD
+
 	get_parent().add_child(wood)
-	
-	queue_free()
+
+	call_deferred("queue_free")

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bwb7y21srdq0m"]
 
-[ext_resource type="Texture2D" uid="uid://d2jc4h05lonxx" path="res://Entities/Items/Wood/Wood.kra" id="1_gf5u4"]
+[ext_resource type="Script" uid="uid://ctdy2lmp4j1to" path="res://Entities/Items/Collectable.gd" id="1_s1xre"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gf5u4"]
 size = Vector2(18, 11)
@@ -8,10 +8,10 @@ size = Vector2(18, 11)
 [node name="Collectable" type="Area2D" unique_id=310036917]
 collision_layer = 4
 collision_mask = 0
+script = ExtResource("1_s1xre")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=770032719]
 scale = Vector2(0.01, 0.01)
-texture = ExtResource("1_gf5u4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1164644764]
 position = Vector2(0, -0.5)

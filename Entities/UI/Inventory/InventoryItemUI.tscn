@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bj47i7pmt527o"]
+
+[ext_resource type="Texture2D" uid="uid://d2jc4h05lonxx" path="res://Entities/Items/Wood/Wood.kra" id="1_vmx8u"]
+[ext_resource type="Script" uid="uid://peh84udidd11" path="res://Entities/UI/Inventory/InventoryItemUI.gd" id="2_p4rra"]
+[ext_resource type="Texture2D" uid="uid://dsh1q31yu7n08" path="res://Entities/UI/Inventory/InventoryStackBorder.kra" id="5_b2lba"]
+
+[node name="InventoryItemUI" type="TextureRect" unique_id=834803609]
+custom_minimum_size = Vector2(100, 100)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_vmx8u")
+expand_mode = 1
+script = ExtResource("2_p4rra")
+
+[node name="Amount" type="Label" parent="." unique_id=1784232298]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 53.0
+offset_top = 62.0
+offset_right = 93.0
+offset_bottom = 85.0
+text = "4"
+horizontal_alignment = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1158364549]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("5_b2lba")
+expand_mode = 1

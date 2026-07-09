@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://buarlvolaj5uu"]
+
+[ext_resource type="Script" uid="uid://d3t2qyssmomi6" path="res://Entities/UI/Inventory/InventoryGrid.gd" id="1_mk8sa"]
+
+[node name="GridContainer" type="GridContainer" unique_id=1946770663]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -258.0
+offset_right = 258.0
+offset_bottom = 204.0
+grow_horizontal = 2
+columns = 4
+script = ExtResource("1_mk8sa")

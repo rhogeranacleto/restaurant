@@ -1,0 +1,14 @@
+[remap]
+
+importer="kra.importer"
+type="ImageTexture"
+uid="uid://dsh1q31yu7n08"
+path="res://.godot/imported/InventoryStackBorder.kra-d57513f389248ed7c13a7be3f8b2c7fa.res"
+
+[deps]
+
+source_file="res://Entities/UI/Inventory/InventoryStackBorder.kra"
+dest_files=["res://.godot/imported/InventoryStackBorder.kra-d57513f389248ed7c13a7be3f8b2c7fa.res"]
+
+[params]
+

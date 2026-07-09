@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Inventory" format=3 uid="uid://bwlvsbo7xwi3x"]
+
+[ext_resource type="Script" uid="uid://dkxtnsmw0qvri" path="res://Common/Inventory/Inventory.gd" id="1_cie22"]
+[ext_resource type="Script" uid="uid://bsf51s5ff08sy" path="res://Common/Inventory/InventoryStack.gd" id="2_wqww6"]
+[ext_resource type="Resource" uid="uid://cuhpiea611g38" path="res://Entities/Items/Wood/Wood.tres" id="3_wqww6"]
+
+[sub_resource type="Resource" id="Resource_ii5c3"]
+script = ExtResource("2_wqww6")
+item = ExtResource("3_wqww6")
+size = 6
+metadata/_custom_type_script = "uid://bsf51s5ff08sy"
+
+[resource]
+script = ExtResource("1_cie22")
+size = 10
+slots = Array[ExtResource("2_wqww6")]([SubResource("Resource_ii5c3")])
+metadata/_custom_type_script = "uid://dkxtnsmw0qvri"

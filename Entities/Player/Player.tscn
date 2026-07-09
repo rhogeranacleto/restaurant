@@ -1,16 +1,10 @@
 [gd_scene format=3 uid="uid://b1n2occ8bv3hv"]
 
 [ext_resource type="Script" uid="uid://dr37xkqk6u6nr" path="res://Entities/Player/Player.gd" id="1_ft8w5"]
-[ext_resource type="Script" uid="uid://dkxtnsmw0qvri" path="res://Common/Inventory/Inventory.gd" id="2_an6q6"]
+[ext_resource type="Resource" uid="uid://bwlvsbo7xwi3x" path="res://Entities/Player/PlayerInventory.tres" id="2_an6q6"]
 [ext_resource type="Texture2D" uid="uid://whejtr6mn8sl" path="res://Entities/Player/PlayerSprite.kra" id="2_ft8w5"]
-[ext_resource type="Script" uid="uid://bsf51s5ff08sy" path="res://Common/Inventory/InventoryStack.gd" id="2_t38ms"]
 [ext_resource type="PackedScene" uid="uid://djx1aue68dmgb" path="res://Entities/Weapons/Axe/Axe.tscn" id="3_h54ih"]
 [ext_resource type="Script" uid="uid://d4e17ryjeb6xn" path="res://Entities/Player/CollectableArea.gd" id="4_ude3g"]
-
-[sub_resource type="Resource" id="Resource_t38ms"]
-script = ExtResource("2_an6q6")
-size = 25
-metadata/_custom_type_script = "uid://dkxtnsmw0qvri"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s0eop"]
 size = Vector2(33, 82)
@@ -21,7 +15,7 @@ radius = 75.059975
 [node name="Player" type="CharacterBody2D" unique_id=1750509619]
 collision_mask = 0
 script = ExtResource("1_ft8w5")
-inventory = SubResource("Resource_t38ms")
+inventory = ExtResource("2_an6q6")
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=293422734]
 scale = Vector2(0.042480472, 0.042480472)

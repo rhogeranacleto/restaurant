@@ -41,12 +41,12 @@ var tweeing : Tween
 func attack() -> void:
 	if tweeing:
 		return
-	
+
 	tweeing = create_tween()
-	
+
 	tweeing.tween_property(axe, "rotation", deg_to_rad(140), 0.3)
 	tweeing.tween_property(axe, "rotation", deg_to_rad(0), 1)
 	await tweeing.finished
 	tweeing = null
-	
+
 	pass

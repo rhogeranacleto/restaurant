@@ -1,7 +1,16 @@
 [gd_scene format=3 uid="uid://ba1qpvals2kie"]
 
 [ext_resource type="PackedScene" uid="uid://dmb0mwxdnilfk" path="res://Stages/Levels/TestLevel/TestLevel.tscn" id="1_glv2v"]
+[ext_resource type="PackedScene" uid="uid://buarlvolaj5uu" path="res://Entities/UI/Inventory/InventoryGrid.tscn" id="2_uu6xs"]
+[ext_resource type="Resource" uid="uid://bwlvsbo7xwi3x" path="res://Entities/Player/PlayerInventory.tres" id="3_r0du0"]
 
 [node name="Main" type="Node" unique_id=1684695564]
 
 [node name="TestLevel" parent="." unique_id=1015776034 instance=ExtResource("1_glv2v")]
+
+[node name="GridContainer" parent="." unique_id=1946770663 instance=ExtResource("2_uu6xs")]
+offset_left = -234.43988
+offset_top = 159.66005
+offset_right = 281.56012
+offset_bottom = 363.66003
+inventory = ExtResource("3_r0du0")
