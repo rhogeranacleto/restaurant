@@ -7,10 +7,15 @@
 [ext_resource type="Script" uid="uid://b2yjbkbejy2fu" path="res://Common/DroppableManager.gd" id="5_q4rff"]
 [ext_resource type="Resource" uid="uid://cuhpiea611g38" path="res://Entities/Items/Wood/Wood.tres" id="6_mwtq5"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_sol7v"]
+radius = 19.026299
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0dji"]
 size = Vector2(352.23584, 885.6216)
 
-[node name="Tree" type="Node2D" unique_id=1419930540]
+[node name="Tree" type="StaticBody2D" unique_id=184022026]
+collision_layer = 2
+collision_mask = 0
 script = ExtResource("1_y6hk3")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1060892676]
@@ -18,6 +23,9 @@ position = Vector2(0, -1)
 scale = Vector2(0.099365234, 0.099365234)
 texture = ExtResource("1_7xyhg")
 offset = Vector2(17.611794, -686.8599)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=845148977]
+shape = SubResource("CircleShape2D_sol7v")
 
 [node name="Hurtbox" type="Area2D" parent="." unique_id=1904137703 node_paths=PackedStringArray("health_manager")]
 position = Vector2(1.75, -69.25)

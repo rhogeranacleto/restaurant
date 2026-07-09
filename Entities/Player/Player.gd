@@ -43,10 +43,11 @@ func attack() -> void:
 		return
 
 	tweeing = create_tween()
-
+	# aqui tbm nao deveria pegar o hitbox assim direto mas whataver
+	axe.get_node('Hitbox').monitoring = true
 	tweeing.tween_property(axe, "rotation", deg_to_rad(140), 0.3)
 	tweeing.tween_property(axe, "rotation", deg_to_rad(0), 1)
 	await tweeing.finished
 	tweeing = null
-
+	axe.get_node('Hitbox').monitoring = false
 	pass

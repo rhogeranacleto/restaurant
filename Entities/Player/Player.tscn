@@ -5,15 +5,16 @@
 [ext_resource type="Texture2D" uid="uid://whejtr6mn8sl" path="res://Entities/Player/PlayerSprite.kra" id="2_ft8w5"]
 [ext_resource type="PackedScene" uid="uid://djx1aue68dmgb" path="res://Entities/Weapons/Axe/Axe.tscn" id="3_h54ih"]
 [ext_resource type="Script" uid="uid://d4e17ryjeb6xn" path="res://Entities/Player/CollectableArea.gd" id="4_ude3g"]
+[ext_resource type="Script" uid="uid://dg6mxj77blaje" path="res://Entities/Player/ControllableCamera.gd" id="6_t38ms"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s0eop"]
-size = Vector2(33, 82)
+size = Vector2(33, 10)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_h54ih"]
 radius = 75.059975
 
 [node name="Player" type="CharacterBody2D" unique_id=1750509619]
-collision_mask = 0
+collision_mask = 2
 script = ExtResource("1_ft8w5")
 inventory = ExtResource("2_an6q6")
 
@@ -22,11 +23,8 @@ scale = Vector2(0.042480472, 0.042480472)
 texture = ExtResource("2_ft8w5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=245534953]
-position = Vector2(1.5, -1)
+position = Vector2(1.5, 32)
 shape = SubResource("RectangleShape2D_s0eop")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=82110508]
-zoom = Vector2(2, 2)
 
 [node name="Axe" parent="." unique_id=1974589341 instance=ExtResource("3_h54ih")]
 position = Vector2(35, -19)
@@ -39,5 +37,11 @@ script = ExtResource("4_ude3g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableArea" unique_id=1845292959]
 shape = SubResource("CircleShape2D_h54ih")
+
+[node name="ControllableCamera" type="Camera2D" parent="." unique_id=177798739]
+zoom = Vector2(2, 2)
+script = ExtResource("6_t38ms")
+zoom_velocity = 2
+metadata/_custom_type_script = "uid://dg6mxj77blaje"
 
 [connection signal="area_entered" from="CollectableArea" to="CollectableArea" method="_on_area_entered"]

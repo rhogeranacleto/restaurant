@@ -17,4 +17,4 @@ func _on_died() -> void:
 	collectable.global_position = resource_node.global_position
 	collectable.inventory_item = inventory_item
 
-	resource_node.get_parent().add_child(collectable)
+	resource_node.get_parent().call_deferred("add_child", collectable)
