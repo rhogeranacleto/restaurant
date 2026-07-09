@@ -17,3 +17,6 @@ var available_space : int :
 var is_full : bool :
 	get():
 		return available_space == 0
+
+static func filter_not_full(slot: InventoryStack) -> bool:
+	return not slot.is_full

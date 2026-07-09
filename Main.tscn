@@ -8,7 +8,9 @@
 
 [node name="TestLevel" parent="." unique_id=1015776034 instance=ExtResource("1_glv2v")]
 
-[node name="GridContainer" parent="." unique_id=1946770663 instance=ExtResource("2_uu6xs")]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=415617997]
+
+[node name="GridContainer" parent="CanvasLayer" unique_id=1946770663 instance=ExtResource("2_uu6xs")]
 offset_left = -234.43988
 offset_top = 159.66005
 offset_right = 281.56012

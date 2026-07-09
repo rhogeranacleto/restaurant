@@ -4,6 +4,8 @@
 [ext_resource type="Script" uid="uid://bjyw6s6xmhak6" path="res://Entities/Props/Trees/Tree.gd" id="1_y6hk3"]
 [ext_resource type="Script" uid="uid://c0v7jo6hxyho7" path="res://Common/Boxes/Hurtbox.gd" id="2_x0dji"]
 [ext_resource type="Script" uid="uid://cd8qvdueih80u" path="res://Common/HealthManager.gd" id="3_ayxwm"]
+[ext_resource type="Script" uid="uid://b2yjbkbejy2fu" path="res://Common/DroppableManager.gd" id="5_q4rff"]
+[ext_resource type="Resource" uid="uid://cuhpiea611g38" path="res://Entities/Items/Wood/Wood.tres" id="6_mwtq5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0dji"]
 size = Vector2(352.23584, 885.6216)
@@ -35,5 +37,10 @@ shape = SubResource("RectangleShape2D_x0dji")
 script = ExtResource("3_ayxwm")
 metadata/_custom_type_script = "uid://cd8qvdueih80u"
 
+[node name="DroppableManager" type="Node" parent="." unique_id=270017548 node_paths=PackedStringArray("health_manager")]
+script = ExtResource("5_q4rff")
+health_manager = NodePath("../HealthManager")
+inventory_item = ExtResource("6_mwtq5")
+metadata/_custom_type_script = "uid://b2yjbkbejy2fu"
+
 [connection signal="changed" from="HealthManager" to="." method="_on_health_manager_changed"]
-[connection signal="died" from="HealthManager" to="." method="_on_health_manager_died"]
