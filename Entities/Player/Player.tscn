@@ -41,7 +41,6 @@ shape = SubResource("CircleShape2D_h54ih")
 [node name="ControllableCamera" type="Camera2D" parent="." unique_id=177798739]
 zoom = Vector2(2, 2)
 script = ExtResource("6_t38ms")
-zoom_velocity = 2
 metadata/_custom_type_script = "uid://dg6mxj77blaje"
 
 [connection signal="area_entered" from="CollectableArea" to="CollectableArea" method="_on_area_entered"]

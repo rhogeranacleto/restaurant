@@ -12,7 +12,7 @@ class_name InventoryGrid
 		if not is_node_ready():
 			await ready
 
-		update_grid()
+		tie_signals()
 
 @export_tool_button('Update grid') var update_grid_button = update_grid
 
@@ -22,7 +22,8 @@ func tie_signals() -> void:
 	# idealmente essa parte tinha que linkar so o necessario
 	# aqui ta apagando tudo e construindo tudo de novo
 	# O que é meio uma merda em performance mas fodase
-	inventory.added_new_stack.connect(update_grid)
+	inventory.added_new_stack.connect(update_grid.unbind(1))
+	update_grid()
 
 func update_grid() -> void:
 	for child in get_children():

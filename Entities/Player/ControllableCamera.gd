@@ -1,7 +1,7 @@
 extends Camera2D
 class_name ControllableCamera
 
-@export var zoom_velocity := 5
+@export var zoom_velocity := 2
 
 var zoom_rate := 0.0
 

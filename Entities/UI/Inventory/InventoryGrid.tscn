@@ -1,40 +1,6 @@
 [gd_scene format=3 uid="uid://buarlvolaj5uu"]
 
 [ext_resource type="Script" uid="uid://d3t2qyssmomi6" path="res://Entities/UI/Inventory/InventoryGrid.gd" id="1_mk8sa"]
-[ext_resource type="Script" uid="uid://dkxtnsmw0qvri" path="res://Common/Inventory/Inventory.gd" id="2_h8f2v"]
-[ext_resource type="Script" uid="uid://bsf51s5ff08sy" path="res://Common/Inventory/InventoryStack.gd" id="3_k2lhy"]
-[ext_resource type="Resource" uid="uid://cuhpiea611g38" path="res://Entities/Items/Wood/Wood.tres" id="4_nudjp"]
-
-[sub_resource type="Resource" id="Resource_t38ms"]
-script = ExtResource("3_k2lhy")
-item = ExtResource("4_nudjp")
-metadata/_custom_type_script = "uid://bsf51s5ff08sy"
-
-[sub_resource type="Resource" id="Resource_hj1c0"]
-script = ExtResource("3_k2lhy")
-item = ExtResource("4_nudjp")
-metadata/_custom_type_script = "uid://bsf51s5ff08sy"
-
-[sub_resource type="Resource" id="Resource_x44r4"]
-script = ExtResource("3_k2lhy")
-item = ExtResource("4_nudjp")
-metadata/_custom_type_script = "uid://bsf51s5ff08sy"
-
-[sub_resource type="Resource" id="Resource_761t5"]
-script = ExtResource("3_k2lhy")
-item = ExtResource("4_nudjp")
-metadata/_custom_type_script = "uid://bsf51s5ff08sy"
-
-[sub_resource type="Resource" id="Resource_hacra"]
-script = ExtResource("3_k2lhy")
-item = ExtResource("4_nudjp")
-metadata/_custom_type_script = "uid://bsf51s5ff08sy"
-
-[sub_resource type="Resource" id="Resource_an6q6"]
-script = ExtResource("2_h8f2v")
-size = 10
-slots = Array[ExtResource("3_k2lhy")]([SubResource("Resource_t38ms"), SubResource("Resource_hj1c0"), SubResource("Resource_x44r4"), SubResource("Resource_761t5"), SubResource("Resource_hacra")])
-metadata/_custom_type_script = "uid://dkxtnsmw0qvri"
 
 [node name="GridContainer" type="GridContainer" unique_id=1946770663]
 anchors_preset = 5
@@ -46,4 +12,3 @@ offset_bottom = 204.0
 grow_horizontal = 2
 columns = 4
 script = ExtResource("1_mk8sa")
-inventory = SubResource("Resource_an6q6")
