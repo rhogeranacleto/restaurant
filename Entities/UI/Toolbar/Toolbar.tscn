@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dt2k3u0pxpsqp"]
+
+[ext_resource type="Script" uid="uid://bto78kr131cn1" path="res://Entities/UI/Toolbar/Toolbar.gd" id="1_twjak"]
+
+[node name="Toolbar" type="GridContainer" unique_id=1386729095]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_twjak")

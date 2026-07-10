@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b50aka2tjawft"]
+
+[ext_resource type="Texture2D" uid="uid://bla8rj32yo0cj" path="res://Entities/Weapons/Axe/Axe.kra" id="1_4tpyi"]
+[ext_resource type="Script" uid="uid://bii3fwxugfia3" path="res://Entities/UI/Toolbar/ToobarItemUI.gd" id="2_r3y1y"]
+[ext_resource type="Resource" uid="uid://dvy5us3p7vn6u" path="res://Entities/Weapons/Axe/AxeToolbarItem.tres" id="3_4tpyi"]
+[ext_resource type="Texture2D" uid="uid://dsh1q31yu7n08" path="res://Entities/UI/Inventory/InventoryStackBorder.kra" id="3_8bq0v"]
+
+[node name="ToobarItemUI" type="TextureRect" unique_id=834803609]
+custom_minimum_size = Vector2(100, 100)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_4tpyi")
+expand_mode = 1
+script = ExtResource("2_r3y1y")
+item = ExtResource("3_4tpyi")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1158364549]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_8bq0v")
+expand_mode = 1

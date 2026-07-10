@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ToolbarItem" format=3 uid="uid://dvy5us3p7vn6u"]
+
+[ext_resource type="Script" uid="uid://dr5kyo6x8awuu" path="res://Common/Toolbar/ToolbarItem.gd" id="1_6hll0"]
+[ext_resource type="Texture2D" uid="uid://bla8rj32yo0cj" path="res://Entities/Weapons/Axe/Axe.kra" id="2_mud44"]
+
+[resource]
+script = ExtResource("1_6hll0")
+name = "Axe"
+texture = ExtResource("2_mud44")
+metadata/_custom_type_script = "uid://dr5kyo6x8awuu"
