@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dmb0mwxdnilfk" path="res://Stages/Levels/TestLevel/TestLevel.tscn" id="1_glv2v"]
 [ext_resource type="PackedScene" uid="uid://buarlvolaj5uu" path="res://Entities/UI/Inventory/InventoryGrid.tscn" id="2_uu6xs"]
 [ext_resource type="Resource" uid="uid://bwlvsbo7xwi3x" path="res://Entities/Player/PlayerInventory.tres" id="3_r0du0"]
+[ext_resource type="PackedScene" uid="uid://dt2k3u0pxpsqp" path="res://Entities/UI/Toolbar/Toolbar.tscn" id="4_cm0pq"]
 
 [node name="Main" type="Node" unique_id=1684695564]
 
@@ -16,3 +17,24 @@ offset_top = 159.66005
 offset_right = 281.56012
 offset_bottom = 363.66003
 inventory = ExtResource("3_r0du0")
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1706970745]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="Toolbar" parent="CanvasLayer/Control" unique_id=1386729095 instance=ExtResource("4_cm0pq")]
+layout_mode = 1
+anchors_preset = 10
+anchor_left = 0.0
+anchor_right = 1.0
+offset_left = 0.0
+offset_right = 0.0
+offset_bottom = 100.0

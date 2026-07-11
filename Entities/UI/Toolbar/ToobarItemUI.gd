@@ -13,9 +13,13 @@ class_name ToolbarItemUI
 		if not is_node_ready():
 			await ready
 
-		update_texture()
+		_update_texture()
 
-@onready var amount: Label = %Amount
+@export var active := false :
+	set(value) :
+		active = value
 
-func update_texture() -> void:
+		modulate = Color(1.0, 0.404, 1.0) if value else Color(1.0, 1.0, 1.0)
+
+func _update_texture() -> void:
 	texture = item.texture

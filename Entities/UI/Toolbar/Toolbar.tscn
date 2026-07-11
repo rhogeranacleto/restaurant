@@ -1,8 +1,17 @@
 [gd_scene format=3 uid="uid://dt2k3u0pxpsqp"]
 
 [ext_resource type="Script" uid="uid://bto78kr131cn1" path="res://Entities/UI/Toolbar/Toolbar.gd" id="1_twjak"]
+[ext_resource type="Script" uid="uid://dr5kyo6x8awuu" path="res://Common/Toolbar/ToolbarItem.gd" id="2_xrs3r"]
+[ext_resource type="Resource" uid="uid://dvy5us3p7vn6u" path="res://Entities/Weapons/Axe/AxeToolbarItem.tres" id="3_bvkny"]
 
 [node name="Toolbar" type="GridContainer" unique_id=1386729095]
-offset_right = 40.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
 offset_bottom = 40.0
+grow_horizontal = 2
+columns = 5
 script = ExtResource("1_twjak")
+items = Array[ExtResource("2_xrs3r")]([ExtResource("3_bvkny"), ExtResource("3_bvkny")])
