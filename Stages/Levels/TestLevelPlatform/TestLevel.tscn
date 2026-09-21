@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://c5534q66tjpd5"]
+
+[ext_resource type="PackedScene" uid="uid://gdo4mpsuovrs" path="res://Entities/Environment/Floor.tscn" id="1_b8dsy"]
+[ext_resource type="PackedScene" uid="uid://b1n2occ8bv3hv" path="res://Entities/Player/Player.tscn" id="2_ksyb4"]
+[ext_resource type="PackedScene" uid="uid://bvjqt3vo7ky1x" path="res://Entities/Props/Trees/Tree.tscn" id="3_iv04o"]
+
+[node name="TestLevel" type="Node2D" unique_id=1918433111]
+
+[node name="Floor" parent="." unique_id=1407057684 instance=ExtResource("1_b8dsy")]
+position = Vector2(325, 894)
+
+[node name="Floor2" parent="." unique_id=2093724357 instance=ExtResource("1_b8dsy")]
+position = Vector2(589, 894)
+
+[node name="Floor3" parent="." unique_id=1434522568 instance=ExtResource("1_b8dsy")]
+position = Vector2(923, 905)
+
+[node name="Floor4" parent="." unique_id=880865678 instance=ExtResource("1_b8dsy")]
+position = Vector2(1245, 791)
+
+[node name="Floor5" parent="." unique_id=227132534 instance=ExtResource("1_b8dsy")]
+position = Vector2(778, 495)
+
+[node name="Floor6" parent="." unique_id=745183741 instance=ExtResource("1_b8dsy")]
+position = Vector2(1676, 605)
+
+[node name="Floor7" parent="." unique_id=547281865 instance=ExtResource("1_b8dsy")]
+position = Vector2(1502, 860)
+
+[node name="Floor8" parent="." unique_id=1685346715 instance=ExtResource("1_b8dsy")]
+position = Vector2(1557, 229)
+
+[node name="Floor9" parent="." unique_id=1091698058 instance=ExtResource("1_b8dsy")]
+position = Vector2(1142, 459)
+
+[node name="Player" parent="." unique_id=1750509619 instance=ExtResource("2_ksyb4")]
+position = Vector2(338, 651)
+
+[node name="Tree" parent="." unique_id=184022026 instance=ExtResource("3_iv04o")]
+position = Vector2(567, 818)
+
+[node name="Tree2" parent="." unique_id=1496882545 instance=ExtResource("3_iv04o")]
+position = Vector2(855, 829)
+
+[node name="Tree3" parent="." unique_id=1125392840 instance=ExtResource("3_iv04o")]
+position = Vector2(1014, 826)

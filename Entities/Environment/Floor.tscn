@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://gdo4mpsuovrs"]
+
+[ext_resource type="Texture2D" uid="uid://q130bu8duxim" path="res://Entities/Environment/barro.webp" id="1_q0trn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tingc"]
+size = Vector2(264.5, 120)
+
+[node name="Floor" type="StaticBody2D" unique_id=1407057684]
+collision_layer = 2
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1331524939]
+scale = Vector2(0.43137252, 0.2962963)
+texture = ExtResource("1_q0trn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1186426585]
+shape = SubResource("RectangleShape2D_tingc")
