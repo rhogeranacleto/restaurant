@@ -1,0 +1,14 @@
+[remap]
+
+importer="kra.importer"
+type="ImageTexture"
+uid="uid://b4n6fr7pax6i5"
+path="res://.godot/imported/TargetCorner.kra-04c71f56118f7ec934670290f74c1998.res"
+
+[deps]
+
+source_file="res://Entities/Player/Target/TargetCorner.kra"
+dest_files=["res://.godot/imported/TargetCorner.kra-04c71f56118f7ec934670290f74c1998.res"]
+
+[params]
+

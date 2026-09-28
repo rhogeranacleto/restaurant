@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://gajf6isjigeo"]
+
+[ext_resource type="Texture2D" uid="uid://b4n6fr7pax6i5" path="res://Entities/Player/Target/TargetCorner.kra" id="1_dj11y"]
+
+[node name="TargetSprite" type="CanvasGroup" unique_id=828390193]
+top_level = true
+
+[node name="Corner1" type="Sprite2D" parent="." unique_id=1218841556]
+scale = Vector2(0.485, 0.485)
+texture = ExtResource("1_dj11y")
+region_enabled = true
+region_rect = Rect2(8.862122, 21.974106, 232.92511, 202.31212)
+
+[node name="Corner2" type="Sprite2D" parent="." unique_id=1102937744]
+scale = Vector2(0.485, 0.485)
+texture = ExtResource("1_dj11y")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(8.862122, 21.974106, 232.92511, 202.31212)
+
+[node name="Corner3" type="Sprite2D" parent="." unique_id=209055489]
+scale = Vector2(0.485, 0.485)
+texture = ExtResource("1_dj11y")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(8.862122, 21.974106, 232.92511, 202.31212)
+
+[node name="Corner4" type="Sprite2D" parent="." unique_id=1848231339]
+scale = Vector2(0.485, 0.485)
+texture = ExtResource("1_dj11y")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(8.862122, 21.974106, 232.92511, 202.31212)
