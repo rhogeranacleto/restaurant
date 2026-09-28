@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dr37xkqk6u6nr" path="res://Entities/Player/Player.gd" id="1_ft8w5"]
 [ext_resource type="Resource" uid="uid://bwlvsbo7xwi3x" path="res://Entities/Player/PlayerInventory.tres" id="2_an6q6"]
 [ext_resource type="Texture2D" uid="uid://whejtr6mn8sl" path="res://Entities/Player/PlayerSprite.kra" id="2_ft8w5"]
-[ext_resource type="PackedScene" uid="uid://djx1aue68dmgb" path="res://Entities/Weapons/Axe/Axe.tscn" id="3_h54ih"]
+[ext_resource type="Texture2D" uid="uid://bla8rj32yo0cj" path="res://Entities/Weapons/Axe/Axe.kra" id="4_hj1c0"]
 [ext_resource type="Script" uid="uid://d4e17ryjeb6xn" path="res://Entities/Player/CollectableArea.gd" id="4_ude3g"]
 [ext_resource type="Script" uid="uid://dg6mxj77blaje" path="res://Entities/Player/ControllableCamera.gd" id="6_t38ms"]
 [ext_resource type="Script" uid="uid://bf0yin0je640" path="res://Entities/Player/Target/TargetActivator.gd" id="7_hj1c0"]
@@ -30,8 +30,10 @@ texture = ExtResource("2_ft8w5")
 position = Vector2(1.5, 32)
 shape = SubResource("RectangleShape2D_s0eop")
 
-[node name="Axe" parent="." unique_id=1974589341 instance=ExtResource("3_h54ih")]
-position = Vector2(35, -19)
+[node name="Axe" type="Sprite2D" parent="." unique_id=510515356]
+position = Vector2(40, -28)
+scale = Vector2(0.018798852, 0.018798852)
+texture = ExtResource("4_hj1c0")
 
 [node name="CollectableArea" type="Area2D" parent="." unique_id=1903132202]
 collision_layer = 0
@@ -57,3 +59,4 @@ metadata/_custom_type_script = "uid://bf0yin0je640"
 shape = SubResource("RectangleShape2D_x44r4")
 
 [connection signal="area_entered" from="CollectableArea" to="CollectableArea" method="_on_area_entered"]
+[connection signal="target_updated" from="TargetActivator" to="." method="_on_target_activator_target_updated"]
